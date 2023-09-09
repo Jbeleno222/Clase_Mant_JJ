@@ -5,37 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/html/style_formulario.css">
+    <link rel="stylesheet" href="../formularios/style_formulario.css">
 </head>
 <body>
     
 
-   <form class="form">
-    <h2 class="form_title">Inicia Sesion</h2>
-    <p class="form_paragraph">¿aún no tienes una cuenta? <a href="#" class="form_link">Entra aquí</a></p>
+    <section>
+    <div class="Login-box">
+        <form action="">
+            <h2>Login</h2>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" required>
+                <label>Email</label>
 
-
-    <div class="form_container">
-        <div class="from_group">
-            <input type="text" id="name" class="form_input" placeholder=" ">
-            <label for="name" class="form_label">Nombre:</label>
-            <span class="form_line"></span>
-        </div>
-        <div class="from_group">
-            <input type="text" id="user" class="form_input" placeholder=" ">
-            <label for="user" class="form_label">Usuario:</label>
-            <span class="form_line"></span>
-        </div>
-        <div class="from_group">
-            <input type="text" id="password" class="form_input" placeholder=" ">
-            <label for="password" class="form_label">Contraseña:</label>
-            <span class="form_line"></span>
-        </div>
-
-        <input type="submit" class="form_submit" value="entrar">
-
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember Me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit">Login</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+        </form>
 
     </div>
-   </form> 
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </section>
 </body>
 </html>
